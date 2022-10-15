@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="8dp"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_account_design">
+
+    <TextView
+        android:id="@+id/tv_maphieu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:text="Mã phiếu:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_tenthanhvien"
+        android:text="Thành viên:"
+        android:layout_below="@+id/tv_maphieu"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:padding="6dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_tensach"
+        android:text="Tên sách:"
+        android:layout_below="@+id/tv_tenthanhvien"
+        android:textColor="#FFFFFF"
+        android:padding="6dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_tenthue"
+        android:text="Tiền thuê:"
+        android:textSize="20sp"
+        android:layout_below="@+id/tv_tensach"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:padding="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_ngaythue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tensach"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/tv_tenthue"
+        android:padding="6dp"
+        android:text="Ngày thuê:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tv_trasach"
+        android:text="chưa trả sách"
+        android:textSize="10sp"
+        android:layout_toRightOf="@+id/tv_tensach"
+        android:layout_below="@+id/tv_tenthanhvien"
+        android:layout_marginLeft="50dp"
+        android:textColor="#F11C0D"
+        android:textStyle="bold"
+        android:padding="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/img_delete_phieumuon"
+        android:layout_width="50dp"
+        android:src="@drawable/ic_close"
+        android:layout_alignParentRight="true"
+        android:layout_height="50dp"/>
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
